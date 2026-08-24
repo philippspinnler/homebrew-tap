@@ -4,6 +4,7 @@ Homebrew tap for [Sonic](https://github.com/philippspinnler/sonic), a multi-prof
 manager for Claude Code on macOS.
 
 ```sh
+brew trust --cask philippspinnler/tap/sonic   # Homebrew 6+ requires trusting third-party casks
 brew install --cask philippspinnler/tap/sonic
 ```
 
