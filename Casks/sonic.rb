@@ -7,7 +7,7 @@ cask "sonic" do
   desc "Multi-profile session manager for Claude Code"
   homepage "https://github.com/philippspinnler/sonic"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Sonic.app"
 
