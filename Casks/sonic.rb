@@ -11,6 +11,13 @@ cask "sonic" do
 
   app "Sonic.app"
 
+  # Sonic is not notarized (no Apple Developer ID); clear the quarantine flag so
+  # macOS lets the app open instead of reporting it as damaged.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Sonic.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/com.sonic.app",
   ]

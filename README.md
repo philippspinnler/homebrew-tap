@@ -4,8 +4,8 @@ Homebrew tap for [Sonic](https://github.com/philippspinnler/sonic), a multi-prof
 manager for Claude Code on macOS.
 
 ```sh
-brew install --cask --no-quarantine philippspinnler/tap/sonic
+brew install --cask philippspinnler/tap/sonic
 ```
 
-Sonic is not notarized; `--no-quarantine` lets macOS open it. Without it, run
-`xattr -cr /Applications/Sonic.app` once after installing.
+Sonic is not notarized with Apple; the cask clears the quarantine flag after installing so the
+app opens normally. If macOS still reports it as damaged, run `xattr -cr /Applications/Sonic.app`.
