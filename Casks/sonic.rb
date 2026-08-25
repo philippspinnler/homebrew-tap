@@ -1,6 +1,6 @@
 cask "sonic" do
-  version "0.1.2"
-  sha256 "01b80fdc5d5f08e438a7020609315c0b82ee727029172e5d6874831e1fbf1cac"
+  version "0.1.3"
+  sha256 "c3b5996ee0d769e5ea469da373c2a5682700d07e7d80b39d644169ba24a4755b"
 
   url "https://github.com/philippspinnler/sonic/releases/download/v#{version}/Sonic-#{version}.zip"
   name "Sonic"
